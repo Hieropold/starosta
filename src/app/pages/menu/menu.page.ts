@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
 })
 export class MenuPage {
 
-  @ViewChild('syringe') syringe: string;
+  @ViewChild('syringe') syringe: any;
 
   constructor(
     private router: Router
