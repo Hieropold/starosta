@@ -1,10 +1,11 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { IntroPage } from './pages/intro/intro.page';
+import { MenuPage } from './pages/menu/menu.page';
 
 const appRoutes: Routes = [
   {path: '', component: IntroPage},
-  // {path: 'login', component: LoginPage, data: {label: 'Login'}},
+  {path: 'menu', component: MenuPage},
   // {path: 'my-cases', component: MyCasesPage, canActivate: [AuthGuard], data: {label: 'My Cases'}},
   // {path: 'new-case', component: NewCasePage, canActivate: [AuthGuard], data: {label: 'New Case'}},
   // {path: 'change-password', component: ChangePasswordPage, canActivate: [AuthGuard], data: {label: 'Change Password'}},
