@@ -13,4 +13,8 @@ export class IntroPage {
   onSkipIntro(): void {
     this.router.navigateByUrl('menu');
   }
+
+  onIntroVideoEnd(): void {
+    this.router.navigateByUrl('menu');
+  }
 }
