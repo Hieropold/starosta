@@ -1,6 +1,7 @@
 body, html {
   margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 .bg {
@@ -17,10 +18,17 @@ body, html {
   top: 50%;
   transform: translateY(-50%);
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .container {
   height: 100%;
+}
+
+.video-container button {
+  position: relative;
+  z-index: 100;
+  top: -600px;
 }
 
 .main-menu {
@@ -37,11 +45,47 @@ body, html {
   height: 449px;
   background-image: url('./img/syringe-animation.png');
 
-  animation: syringe-animation 0.6s steps(9);
+  animation: syringe-animation 0.6s steps(8);
   animation-play-state: paused;
+  animation-fill-mode: forwards;
 }
 
 @keyframes syringe-animation {
   0% {background-position-x: 0px;}
-  100% {background-position-x: -4509px;}
+  100% {
+    background-position-x: -4008px;
+  }
+}
+
+.history {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  perspective: 400px;
+
+  color: #feda4a;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-size: 300%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  /*transform-origin: 50% 100%;*/
+  animation: crawl 5s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes crawl {
+  0% {
+    top: 0;
+    /*transform: rotateX(20deg) translateZ(0);*/
+  }
+  100% {
+    top: -8000px;
+    /*transform: rotateX(30deg) translateZ(-6000px);*/
+  }
 }

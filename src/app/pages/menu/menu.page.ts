@@ -16,7 +16,6 @@ export class MenuPage {
   onMenuClick(): void {
     const el = this.syringe.nativeElement;
     el.style.animationPlayState = 'running';
-    el.style.animationFillMode = 'forwards';
 
     setTimeout(() => {
       this.router.navigateByUrl('start');
