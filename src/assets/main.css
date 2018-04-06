@@ -89,3 +89,11 @@ body, html {
     /*transform: rotateX(30deg) translateZ(-6000px);*/
   }
 }
+
+.near-litmo {
+  height: 100%;
+  background-image: url('./img/scene-near-litmo.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
