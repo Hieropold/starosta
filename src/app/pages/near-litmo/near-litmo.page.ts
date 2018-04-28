@@ -8,7 +8,7 @@ import { InventoryService } from '../../services/inventory.service';
 export class NearLitmoPage extends Scene {
 
   constructor(
-    private inv: InventoryService
+    inv: InventoryService
   ) {
     super();
   }
