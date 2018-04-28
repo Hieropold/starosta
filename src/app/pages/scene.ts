@@ -3,7 +3,9 @@ import { HostListener } from '@angular/core';
 import { InventoryService } from '../services/inventory.service';
 
 export class Scene {
-  @HostListener('document:contextmenu', ['$event'])
+  @HostListener('document:contextmenu', ['$event']);
+
+  private inv: InventoryService;
 
   constructor() {
   }
