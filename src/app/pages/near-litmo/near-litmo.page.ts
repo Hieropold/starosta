@@ -3,7 +3,8 @@ import { Scene } from '../scene';
 import { InventoryService } from '../../services/inventory.service';
 
 @Component({
-  templateUrl: './near-litmo.page.html'
+  templateUrl: './near-litmo.page.html',
+  styleUrls: ['./near-litmo.css']
 })
 export class NearLitmoPage extends Scene {
 

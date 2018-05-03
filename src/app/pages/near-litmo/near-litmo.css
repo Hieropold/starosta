@@ -1,0 +1,25 @@
+.near-litmo {
+  background-image: url('../../../assets/img/scene-near-litmo.jpg');
+}
+
+.near-litmo .anim-ilia {
+  width: 52px;
+  height: 52px;
+  background-image: url('../../../assets/img/anim/near-litmo-ilia.jpg');
+
+  position: relative;
+  top: 274px;
+  left: 358px;
+
+  animation: near-litmo-ilia-animation 4s steps(2);
+  animation-play-state: running;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes near-litmo-ilia-animation {
+  0% {background-position-x: 0px;}
+  20% {
+    background-position-x: -105px;
+  }
+}
