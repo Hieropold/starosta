@@ -11,15 +11,14 @@
   top: 274px;
   left: 358px;
 
-  animation: near-litmo-ilia-animation 4s steps(2);
+  animation: near-litmo-ilia-animation 2s steps(3);
   animation-play-state: running;
-  animation-fill-mode: forwards;
   animation-iteration-count: infinite;
 }
 
 @keyframes near-litmo-ilia-animation {
   0% {background-position-x: 0px;}
-  20% {
-    background-position-x: -105px;
+  100% {
+    background-position-x: -159px;
   }
 }
