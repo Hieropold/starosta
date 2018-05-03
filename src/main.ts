@@ -8,5 +8,7 @@ if (environment.production) {
   enableProdMode();
 }
 
+console.log('We were moving fast and broke things - sorry for this.');
+
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));
