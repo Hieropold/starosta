@@ -57,39 +57,6 @@ body, html {
   }
 }
 
-.history {
-  display: flex;
-  justify-content: center;
-  height: 800px;
-  perspective: 400px;
-
-  color: #feda4a;
-  font-family: 'Pathway Gothic One', sans-serif;
-  font-size: 300%;
-  font-weight: 600;
-  letter-spacing: 6px;
-  line-height: 150%;
-  text-align: justify;
-}
-
-.crawl {
-  position: relative;
-  /*transform-origin: 50% 100%;*/
-  animation: crawl 120s linear;
-  animation-fill-mode: forwards;
-}
-
-@keyframes crawl {
-  0% {
-    top: 0;
-    /*transform: rotateX(20deg) translateZ(0);*/
-  }
-  100% {
-    top: -8000px;
-    /*transform: rotateX(30deg) translateZ(-6000px);*/
-  }
-}
-
 .scene {
   height: 100%;
   background-repeat: no-repeat;
