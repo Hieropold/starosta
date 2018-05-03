@@ -1,8 +1,6 @@
 .history {
   display: flex;
   justify-content: center;
-  height: 800px;
-  perspective: 400px;
 
   color: #feda4a;
   text-shadow: 0 0 2px #fff6ce;
@@ -11,23 +9,26 @@
   font-weight: 600;
   line-height: 150%;
   text-align: justify;
-  padding-left: 2rem;
-  padding-right: 2rem;
 
   background-image: url(../../../assets/img/spb.jpg);
+
+  height: 100%;
+  width: 100%;
 }
 
 .history .crawl {
   position: relative;
   animation: crawl 120s linear;
   animation-fill-mode: forwards;
+
+  width: 560px;
 }
 
 @keyframes crawl {
   0% {
-    top: 0;
+    top: 500px;
   }
   100% {
-    top: -3320px;
+    top: -4170px;
   }
 }
