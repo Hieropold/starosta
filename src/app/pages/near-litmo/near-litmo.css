@@ -32,9 +32,9 @@
   top: 283px;
   left: 510px;
 
-  animation: near-litmo-navroid-animation 2s steps(9);
-  animation-play-state: running;
-  animation-iteration-count: infinite;
+  animation: near-litmo-navroid-animation 1.5s steps(9);
+  animation-play-state: paused;
+  /*animation-fill-mode: forwards;*/
 }
 
 @keyframes near-litmo-navroid-animation {
