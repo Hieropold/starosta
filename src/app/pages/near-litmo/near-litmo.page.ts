@@ -11,6 +11,8 @@ export class NearLitmoPage extends Scene implements OnInit {
 
   public isNavroidAnimationRunning = false;
 
+  private vomitSound: Howl;
+
   constructor(
     inv: InventoryService
   ) {
@@ -19,6 +21,10 @@ export class NearLitmoPage extends Scene implements OnInit {
   }
 
   ngOnInit() {
+    this.vomitSound = new Howl({
+      src: ['../../../assets/snd/vomit.webm', '../../../assets/snd/vomit.mp3']
+    });
+
     setTimeout(() => {
       this.startNavroidAnimation();
     }, 1000);
@@ -26,6 +32,7 @@ export class NearLitmoPage extends Scene implements OnInit {
 
   private startNavroidAnimation() {
     this.isNavroidAnimationRunning = true;
+    this.vomitSound.play();
   }
 
   onNavroidAnimationEnd(e: Event) {
