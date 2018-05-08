@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {Scene} from '../scene';
-import {InventoryService} from '../../services/inventory.service';
+import { Component, OnInit } from '@angular/core';
+import { Howl } from 'howler';
+import { Scene } from '../scene';
+import { InventoryService } from '../../services/inventory.service';
 
 @Component({
   templateUrl: './near-litmo.page.html',
