@@ -1,7 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import {Scene} from '../scene';
 import {InventoryService} from '../../services/inventory.service';
-import {setTimeout} from 'timers';
 
 @Component({
   templateUrl: './near-litmo.page.html',
@@ -9,7 +8,7 @@ import {setTimeout} from 'timers';
 })
 export class NearLitmoPage extends Scene implements OnInit {
 
-  @ViewChild('navroid') navroid: any;
+  public isNavroidAnimationRunning = false;
 
   constructor(
     inv: InventoryService
@@ -25,16 +24,13 @@ export class NearLitmoPage extends Scene implements OnInit {
   }
 
   private startNavroidAnimation() {
-    const el = this.navroid.nativeElement;
-    el.style.animationPlayState = 'running';
+    this.isNavroidAnimationRunning = true;
+  }
 
-    // restart Navroid animation each 6s
-    setInterval(() => {
-      console.log('restarting animation');
-      el.style.animation = '';
-      setTimeout(() => {
-        el.style.animation = 'near-litmo-navroid-animation';
-      }, 0);
-    }, 3000);
+  onNavroidAnimationEnd(e: Event) {
+    this.isNavroidAnimationRunning = false;
+    setTimeout(() => {
+      this.startNavroidAnimation();
+    }, 5000);
   }
 }

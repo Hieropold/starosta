@@ -31,10 +31,11 @@
   position: relative;
   top: 283px;
   left: 510px;
+}
 
+.near-litmo .anim-navroid--run {
   animation: near-litmo-navroid-animation 1.5s steps(9);
-  animation-play-state: paused;
-  /*animation-fill-mode: forwards;*/
+  animation-play-state: running;
 }
 
 @keyframes near-litmo-navroid-animation {
