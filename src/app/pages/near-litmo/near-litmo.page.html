@@ -1,4 +1,9 @@
 <div class="scene near-litmo" (contextmenu)="onRightClick($event)">
+
+  <div class="talkable talkable-ilia"></div>
   <div class="anim-ilia"></div>
-  <div class="anim-navroid" [class.anim-navroid--run]="isNavroidAnimationRunning" (animationend)="onNavroidAnimationEnd($event)"></div>
+
+  <div class="talkable talkable-navroid"></div>
+  <div class="anim-navroid" [class.anim-navroid--run]="isNavroidAnimationRunning"
+       (animationend)="onNavroidAnimationEnd($event)"></div>
 </div>

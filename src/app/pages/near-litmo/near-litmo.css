@@ -44,3 +44,19 @@
     background-position-x: -981px;
   }
 }
+
+.talkable-ilia {
+  height: 175px;
+  width: 71px;
+  top: 265px;
+  left: 316px;
+  cursor: url(../../../assets/img/cursors/talk-ilia.png), auto;
+}
+
+.talkable-navroid {
+  height: 82px;
+  width: 71px;
+  top: 341px;
+  right: 218px;
+  cursor: url(../../../assets/img/cursors/talk-navroid.png), auto;
+}

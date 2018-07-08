@@ -63,3 +63,8 @@ body, html {
   background-position: center;
   background-size: cover;
 }
+
+.talkable {
+  position: absolute;
+  z-index: 99;
+}
