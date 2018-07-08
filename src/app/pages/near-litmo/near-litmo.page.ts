@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Howl } from 'howler';
 import { Scene } from '../scene';
-import { InventoryService } from '../../services/inventory.service';
 
 @Component({
   templateUrl: './near-litmo.page.html',
@@ -9,15 +9,16 @@ import { InventoryService } from '../../services/inventory.service';
 })
 export class NearLitmoPage extends Scene implements OnInit {
 
+  @HostListener('document:contextmenu', ['$event'])
+
   public isNavroidAnimationRunning = false;
 
   private vomitSound: Howl;
 
   constructor(
-    inv: InventoryService
+    private router: Router
   ) {
     super();
-
   }
 
   ngOnInit() {
@@ -40,5 +41,10 @@ export class NearLitmoPage extends Scene implements OnInit {
     setTimeout(() => {
       this.startNavroidAnimation();
     }, 5000);
+  }
+
+  onRightClick($event) {
+    $event.preventDefault();
+    this.router.navigateByUrl('rucksack/near-litmo');
   }
 }

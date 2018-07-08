@@ -8,6 +8,7 @@ import { IntroPage } from "./pages/intro/intro.page";
 import { MenuPage } from "./pages/menu/menu.page";
 import { StartPage } from './pages/start/start.page';
 import { NearLitmoPage } from './pages/near-litmo/near-litmo.page';
+import { RucksackPage } from './pages/rucksack/rucksack.page';
 
 import { InventoryService } from './services/inventory.service';
 
@@ -17,7 +18,8 @@ import { InventoryService } from './services/inventory.service';
     IntroPage,
     MenuPage,
     StartPage,
-    NearLitmoPage
+    NearLitmoPage,
+    RucksackPage
   ],
   imports: [
     BrowserModule,
