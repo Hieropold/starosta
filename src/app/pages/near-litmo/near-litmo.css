@@ -60,3 +60,7 @@
   right: 218px;
   cursor: url(../../../assets/img/cursors/talk-navroid.png), auto;
 }
+
+.phrase-2 {
+  color: yellow;
+}

@@ -2,6 +2,7 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Howl } from 'howler';
 import { Scene } from '../scene';
+import { DialogsService } from '../../services/dialogs.service';
 
 @Component({
   templateUrl: './near-litmo.page.html',
@@ -16,7 +17,8 @@ export class NearLitmoPage extends Scene implements OnInit {
   private vomitSound: Howl;
 
   constructor(
-    private router: Router
+    private router: Router,
+    private dialogs: DialogsService
   ) {
     super();
   }
@@ -46,5 +48,9 @@ export class NearLitmoPage extends Scene implements OnInit {
   onRightClick($event) {
     $event.preventDefault();
     this.router.navigateByUrl('rucksack/near-litmo');
+  }
+
+  onTalkIlya() {
+    this.dialogs.show('near-litmo', 'ilya');
   }
 }

@@ -11,6 +11,7 @@ import { NearLitmoPage } from './pages/near-litmo/near-litmo.page';
 import { RucksackPage } from './pages/rucksack/rucksack.page';
 
 import { InventoryService } from './services/inventory.service';
+import { DialogsService } from './services/dialogs.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { InventoryService } from './services/inventory.service';
     routing
   ],
   providers: [
-    InventoryService
+    InventoryService,
+    DialogsService
   ],
   bootstrap: [AppComponent]
 })
