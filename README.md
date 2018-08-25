@@ -41,7 +41,6 @@ sounds - https://howlerjs.com/
 
 ## TODOs
 
-* Talk cursors use incorrect name for Navroid on near-litmo scene - should be "Пьяный Навроид"
 * Animation very frequently are displayed with 1px offset, not nice.
 * Dialog phrases should be coloured into different colours, like in original.
 * Dialog phrases should be displayed with "typing" animation, like in original.
