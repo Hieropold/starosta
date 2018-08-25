@@ -73,11 +73,15 @@ body, html {
   position: absolute;
   bottom: 0;
   font-family: monospace;
-  color: #f73131;
-  text-shadow: 0px 0px 1px white;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  color: white;
+  text-shadow: 0px 0px 1px red;
+  margin: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.2);
   font-size: 18px;
-  display: hidden;
+}
+
+.dialog__phrase {
+  padding-bottom: 20px;
 }

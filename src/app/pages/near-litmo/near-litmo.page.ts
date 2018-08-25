@@ -53,4 +53,8 @@ export class NearLitmoPage extends Scene implements OnInit {
   onTalkIlya() {
     this.dialogs.show('near-litmo', 'ilya');
   }
+
+  onTalkNavroid() {
+    this.dialogs.show('near-litmo', 'navroid');
+  }
 }
