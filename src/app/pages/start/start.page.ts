@@ -13,6 +13,6 @@ export class StartPage {
   }
 
   skipHistory(): void {
-    this.router.navigateByUrl('near-litmo');
+    this.router.navigateByUrl('future');
   }
 }

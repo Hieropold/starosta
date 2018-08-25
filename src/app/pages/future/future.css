@@ -1,0 +1,11 @@
+.future {
+  background-image: url('../../../assets/img/scene-future.jpg');
+}
+
+.talkable-vasily {
+  height: 180px;
+  width: 108px;
+  top: 262px;
+  right: 458px;
+  cursor: url(../../../assets/img/cursors/talk-ancient-vasily.png), auto;
+}

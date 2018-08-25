@@ -4,8 +4,9 @@ import { NgModule } from '@angular/core';
 import { routing } from './app.routing';
 
 import { AppComponent } from './app.component';
-import { IntroPage } from "./pages/intro/intro.page";
-import { MenuPage } from "./pages/menu/menu.page";
+import { IntroPage } from './pages/intro/intro.page';
+import { MenuPage } from './pages/menu/menu.page';
+import { FuturePage } from './pages/future/future.page';
 import { StartPage } from './pages/start/start.page';
 import { NearLitmoPage } from './pages/near-litmo/near-litmo.page';
 import { RucksackPage } from './pages/rucksack/rucksack.page';
@@ -18,6 +19,7 @@ import { DialogsService } from './services/dialogs.service';
     AppComponent,
     IntroPage,
     MenuPage,
+    FuturePage,
     StartPage,
     NearLitmoPage,
     RucksackPage
@@ -32,4 +34,5 @@ import { DialogsService } from './services/dialogs.service';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
