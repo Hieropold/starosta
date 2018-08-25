@@ -73,12 +73,12 @@ body, html {
   position: absolute;
   bottom: 0;
   font-family: monospace;
-  color: white;
-  text-shadow: 0px 0px 1px red;
+  color: #fcff00;
+  text-shadow: 0px 0px 6px black;
   margin: 20px;
   padding: 20px;
   padding-bottom: 0px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(0, 0, 0, 0.4);
   font-size: 18px;
 }
 
