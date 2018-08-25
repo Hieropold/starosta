@@ -38,3 +38,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## notes
 
 sounds - https://howlerjs.com/
+
+## TODOs
+
+* Talk cursors use incorrect name for Navroid on near-litmo scene - should be "Пьяный Навроид"
+* Animation very frequently are displayed with 1px offset, not nice.
+* Dialog phrases should be coloured into different colours, like in original.
+* Dialog phrases should be displayed with "typing" animation, like in original.
+* Background music on Near Litmo scene is missing.
+* Character intro (Moh, with image and "typed" dossier) on Future scene is missing.
+* Cursor is not displayed correctly - should be large yellow arrow.
