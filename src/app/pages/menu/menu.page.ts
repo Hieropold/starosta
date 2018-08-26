@@ -18,7 +18,7 @@ export class MenuPage {
     el.style.animationPlayState = 'running';
 
     setTimeout(() => {
-      console.log('Лет зе тр\u0463шъ и угаръ бегин!');
+      console.log('Л\u0463тъ з\u0463 тр\u0463шъ i угаръ бегинъ!');
       this.router.navigateByUrl('start');
     }, 1000);
   }
