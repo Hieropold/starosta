@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
-import { Scene } from '../scene';
-import { DialogsService } from '../../services/dialogs.service';
 import { Router } from '@angular/router';
+
+import { Scene } from '../scene';
+
+import { DialogsService } from '../../services/dialogs.service';
+import { DossiersService } from '../../services/dossiers.service';
 
 @Component({
   templateUrl: './future.page.html',
@@ -11,9 +14,18 @@ export class FuturePage extends Scene {
 
   constructor(
     private router: Router,
-    private dialogs: DialogsService
+    private dialogs: DialogsService,
+    private dossiers: DossiersService
   ) {
     super();
+
+    setTimeout(() => {
+      this.dossiers.show('lukich');
+    }, 1000);
+
+    setTimeout(() => {
+      this.dossiers.hide();
+    }, 10000);
   }
 
   onTalkVasily() {

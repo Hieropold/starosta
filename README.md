@@ -45,5 +45,5 @@ sounds - https://howlerjs.com/
 * Dialog phrases should be coloured into different colours, like in original.
 * Dialog phrases should be displayed with "typing" animation, like in original.
 * Background music on Near Litmo scene is missing.
-* Character intro (Moh, with image and "typed" dossier) on Future scene is missing.
 * Cursor is not displayed correctly - should be large yellow arrow.
+* Dossiers should be displayed with "typing" animation and sound, like in original.

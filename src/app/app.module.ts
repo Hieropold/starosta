@@ -13,6 +13,7 @@ import { RucksackPage } from './pages/rucksack/rucksack.page';
 
 import { InventoryService } from './services/inventory.service';
 import { DialogsService } from './services/dialogs.service';
+import { DossiersService } from './services/dossiers.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { DialogsService } from './services/dialogs.service';
   ],
   providers: [
     InventoryService,
-    DialogsService
+    DialogsService,
+    DossiersService
   ],
   bootstrap: [AppComponent]
 })
