@@ -47,4 +47,3 @@ sounds - https://howlerjs.com/
 * Background music on Near Litmo scene is missing.
 * Cursor is not displayed correctly - should be large yellow arrow.
 * Dossiers should be displayed with "typing" animation and sound, like in original.
-* Run animation of time travel between Future scene and Near Litmo scene.

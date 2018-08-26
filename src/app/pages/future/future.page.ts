@@ -32,7 +32,7 @@ export class FuturePage extends Scene {
     this.dialogs.show('future', 'vasily');
 
     window.setTimeout(() => {
-      this.router.navigateByUrl('near-litmo');
+      this.router.navigateByUrl('teleport');
     }, 10000);
   }
 }
