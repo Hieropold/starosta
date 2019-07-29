@@ -82,6 +82,15 @@ body, html {
   font-size: 18px;
 }
 
+.dialog__skip {
+  float: right;
+  color: white;
+  font-size: 0.8rem;
+  background-color: grey;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+
 .dialog__phrase {
   padding-bottom: 20px;
 }

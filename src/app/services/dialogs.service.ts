@@ -45,6 +45,14 @@ export class DialogsService {
     const dialogEl = document.createElement('div');
     dialogEl.className = 'dialog';
 
+    const skipEl = document.createElement('div');
+    skipEl.className = 'dialog__skip';
+    skipEl.innerHTML = 'пропустить';
+    skipEl.onclick = () => {
+      sceneEl.removeChild(dialogEl);
+    };
+    dialogEl.appendChild(skipEl);
+
     let phraseEl;
     for (let i = 0; i < this.phrases[scene][char].length; i++) {
       phraseEl = document.createElement('div');
