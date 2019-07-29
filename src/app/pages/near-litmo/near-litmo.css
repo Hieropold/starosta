@@ -60,3 +60,15 @@
   right: 218px;
   cursor: url(../../../assets/img/cursors/talk-navroid.png), auto;
 }
+
+.near-litmo .item-purse {
+  width: 33px;
+  height: 17px;
+  background-image: url('../../../assets/img/item-scene-purse.png');
+
+  cursor: url(../../../assets/img/cursors/hand.png), auto;
+
+  position: absolute;
+  top: 441px;
+  left: 632px;
+}

@@ -6,4 +6,6 @@
   <div class="talkable talkable-navroid" (click)="onTalkNavroid()"></div>
   <div class="anim-navroid" [class.anim-navroid--run]="isNavroidAnimationRunning"
        (animationend)="onNavroidAnimationEnd($event)"></div>
+
+  <div class="item item-purse" (click)="onPickPurse()" *ngIf="!isPurseTaken"></div>
 </div>

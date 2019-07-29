@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Howl } from 'howler';
 import { Scene } from '../scene';
 import { DialogsService } from '../../services/dialogs.service';
+import {InventoryService} from "../../services/inventory.service";
 
 @Component({
   templateUrl: './near-litmo.page.html',
@@ -16,9 +17,12 @@ export class NearLitmoPage extends Scene implements OnInit {
 
   private vomitSound: Howl;
 
+  private isPurseTaken: boolean = false;
+
   constructor(
     private router: Router,
-    private dialogs: DialogsService
+    private dialogs: DialogsService,
+    private inv: InventoryService
   ) {
     super();
   }
@@ -31,6 +35,8 @@ export class NearLitmoPage extends Scene implements OnInit {
     setTimeout(() => {
       this.startNavroidAnimation();
     }, 1000);
+
+    this.isPurseTaken = this.inv.isTaken('purse');
   }
 
   private startNavroidAnimation() {
@@ -56,5 +62,10 @@ export class NearLitmoPage extends Scene implements OnInit {
 
   onTalkNavroid() {
     this.dialogs.show('near-litmo', 'navroid');
+  }
+
+  onPickPurse() {
+    this.inv.take('purse');
+    this.isPurseTaken = true;
   }
 }

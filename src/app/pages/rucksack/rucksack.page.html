@@ -1,2 +1,10 @@
 <div class="scene rucksack" (click)="onBackClick()">
+
+  <div *ngFor="let item of items">
+    <div *ngIf="item.taken">
+      <img src="../../../assets/img/items/{{item.id}}.png"/>
+      {{item.name}}
+    </div>
+  </div>
+
 </div>

@@ -1,3 +1,5 @@
 export interface Item {
-  name: string
+  id: string;
+  name: string;
+  taken: boolean;
 }
