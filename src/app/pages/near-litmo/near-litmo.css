@@ -72,3 +72,13 @@
   top: 441px;
   left: 632px;
 }
+
+.navigate-hall {
+  position: absolute;
+  width: 293px;
+  height: 139px;
+  top: 277px;
+  left: 278px;
+
+  cursor: url(../../../assets/img/cursors/navigation-up.png), auto;
+}

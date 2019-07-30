@@ -15,6 +15,7 @@ import { RucksackPage } from './pages/rucksack/rucksack.page';
 import { InventoryService } from './services/inventory.service';
 import { DialogsService } from './services/dialogs.service';
 import { DossiersService } from './services/dossiers.service';
+import {HallPage} from "./pages/hall/hall.page";
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DossiersService } from './services/dossiers.service';
     TeleportPage,
     StartPage,
     NearLitmoPage,
+    HallPage,
     RucksackPage
   ],
   imports: [

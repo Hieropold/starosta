@@ -7,6 +7,7 @@ import { NearLitmoPage } from './pages/near-litmo/near-litmo.page';
 import { RucksackPage } from './pages/rucksack/rucksack.page';
 import { FuturePage } from './pages/future/future.page';
 import { TeleportPage } from './pages/teleport/teleport.page';
+import { HallPage } from "./pages/hall/hall.page";
 
 const appRoutes: Routes = [
   {path: '', component: IntroPage},
@@ -15,6 +16,7 @@ const appRoutes: Routes = [
   {path: 'future', component: FuturePage},
   {path: 'teleport', component: TeleportPage},
   {path: 'near-litmo', component: NearLitmoPage},
+  {path: 'hall', component: HallPage},
   {path: 'rucksack/:return', component: RucksackPage},
   //{path: 'my-cases', component: MyCasesPage, canActivate: [AuthGuard], data: {label: 'My Cases'}},
 

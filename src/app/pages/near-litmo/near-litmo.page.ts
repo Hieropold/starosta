@@ -68,4 +68,8 @@ export class NearLitmoPage extends Scene implements OnInit {
     this.inv.take('purse');
     this.isPurseTaken = true;
   }
+
+  onNavigateHall() {
+    this.router.navigateByUrl('hall');
+  }
 }
