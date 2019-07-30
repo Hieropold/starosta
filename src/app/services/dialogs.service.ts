@@ -47,7 +47,7 @@ export class DialogsService {
 
     const skipEl = document.createElement('div');
     skipEl.className = 'dialog__skip';
-    skipEl.innerHTML = 'пропустить';
+    skipEl.innerHTML = 'далее';
     skipEl.onclick = () => {
       sceneEl.removeChild(dialogEl);
     };
