@@ -1,0 +1,23 @@
+# Rust
+/target/
+/debug/
+/release/
+*.rs.bk
+*.rlib
+*.prof*
+
+# Build output
+/dist/
+
+# Environment
+.env*
+*.log
+
+# IDEs
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
