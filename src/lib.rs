@@ -16,9 +16,9 @@ pub enum AppState {
 struct ImageHandle(Handle<Image>);
 
 fn setup(mut commands: Commands, asset_server: Res<AssetServer>) {
-    info!("SETUP SYSTEM RUNNING: Loading asset: spb.bmp");
+    info!("SETUP SYSTEM RUNNING: Loading asset: spb.webp");
     commands.insert_resource(ClearColor(Color::rgb(0.2, 0.2, 0.8))); // Blue background
-    commands.insert_resource(ImageHandle(asset_server.load("spb.bmp")));
+    commands.insert_resource(ImageHandle(asset_server.load("spb.webp")));
 }
 
 fn check_loading(

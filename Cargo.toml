@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = { version = "0.13.0", features = ["bmp"] }
+bevy = { version = "0.13.0", features = ["webp"] }
 console_error_panic_hook = "0.1.7"
 getrandom = { version = "0.3", features = ["wasm_js"] }
 uuid = { version = "1.19.0", features = ["js"] }
