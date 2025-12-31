@@ -41,7 +41,7 @@
 
 ### Implementation for User Story 1
 
-- [x] T009 [US1] Implement a `setup` system in `src/lib.rs` that is scheduled on app startup to begin loading the target image (`graphics/Spb.bmp`) via the `AssetServer`.
+- [x] T009 [US1] Implement a `setup` system in `src/lib.rs` that is scheduled on app startup to begin loading the `spb.webp` image from the root assets directory via the `AssetServer`.
 - [x] T010 [US1] Create a system in `src/lib.rs` that monitors the asset loading progress and transitions the `AppState` from `Loading` to `Running` once the image is fully loaded.
 - [x] T011 [US1] Implement a system in `src/lib.rs` that runs once upon entering the `Running` state to set up a 2D camera.
 - [x] T012 [US1] Implement a system in `src/lib.rs` that also runs once upon entering the `Running` state to display the loaded image as a sprite on the screen.
