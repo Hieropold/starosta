@@ -22,7 +22,13 @@
     <script type="module">
       import init from './wasm.js';
       async function run() {
-        await init();
+        console.log("Starting WASM...");
+        try {
+            await init();
+            console.log("WASM initialized.");
+        } catch (e) {
+            console.error("WASM init failed:", e);
+        }
       }
       run();
     </script>
